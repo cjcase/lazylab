@@ -124,8 +124,8 @@ def gather():
     os.makedirs("samples")
   with open("match.txt") as f:
     for line in f:
-      p, h = line.split()
-      shutil.copy(p, os.path.join("samples", h))
+      p, md5, sha1, sha256 = line.split()
+      shutil.copy(p, os.path.join("samples", md5))
   print("Done!")
 
 def api_metadefender():
