@@ -98,7 +98,7 @@ def api_virustotal():
   r = RequestAdapt()
   with open("match.txt") as out_with:
     for line in out_with:
-      p, h = line.split()
+      p, md5, sha1, sha256 = line.split()
       params = {'apikey': apikey_vt, 'resource': h}
       response = r.get("https://www.virustotal.com/vtapi/v2/file/report", params = params)
       print(response)
