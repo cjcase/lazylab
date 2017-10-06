@@ -6,6 +6,7 @@ You will need:
 * Python3
 * PEV https://github.com/merces/pev
 * GNU Tools (file, strings)
+
 *Hint: Kali Linux has all this by default* 
 
 # Usage
