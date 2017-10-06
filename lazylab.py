@@ -102,7 +102,7 @@ def api_virustotal():
       params = {'apikey': apikey_vt, 'resource': md5}
       response = r.get("https://www.virustotal.com/vtapi/v2/file/report", params = params)
       print(response)
-      out_virii = open(os.path.join(path_dir,"{}.txt".format(h)), "w+")
+      out_virii = open(os.path.join(path_dir,"{}.txt".format(md5)), "w+")
       out_virii.write("File: {}\n{}".format(p,response.json()))
       out_virii.close()
   print("[*] Done!")
