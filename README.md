@@ -10,10 +10,10 @@ You will need:
 
 # Usage
 1. Get you API Keys for the different services the script will use
-..* VirusTotal https://developers.virustotal.com/v2.0/reference
-..* Metadefender https://www.metadefender.com/public-api/#!/about
-..* TotalHash https://totalhash.cymru.com/contact-us/
-..* Hybrid Analysis https://www.hybrid-analysis.com/apikeys/info
+  * VirusTotal https://developers.virustotal.com/v2.0/reference
+  * Metadefender https://www.metadefender.com/public-api/#!/about
+  * TotalHash https://totalhash.cymru.com/contact-us/
+  * Hybrid Analysis https://www.hybrid-analysis.com/apikeys/info
 3. 
 2. Run the script by pointing it to a directory and specifing a 2 number code to choose malware samples from
 `python3 lazylab.py /path/to/malwares 42`
