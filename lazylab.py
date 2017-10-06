@@ -99,7 +99,7 @@ def api_virustotal():
   with open("match.txt") as out_with:
     for line in out_with:
       p, md5, sha1, sha256 = line.split()
-      params = {'apikey': apikey_vt, 'resource': h}
+      params = {'apikey': apikey_vt, 'resource': md5}
       response = r.get("https://www.virustotal.com/vtapi/v2/file/report", params = params)
       print(response)
       out_virii = open(os.path.join(path_dir,"{}.txt".format(h)), "w+")
