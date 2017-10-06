@@ -54,6 +54,13 @@ def sha256sum(fname):
   return hash_sha256.hexdigest()
 
 def get_my_hashes(rootpath, code):
+  if os.path.exists("match.txt"):
+    print("[*] Found match.txt file!\nRunning this function again will overwrite your previous matches!")
+    choice = input(" Do you want to continue? [y/n](y) : ")
+    if not choice=='' or not choice=='y':
+      print("Aborting!")
+      sys.exit(1)
+      
   print("[*] Calculating hashes for files and saving all to hashes.txt...", end=" ")
   out_all = open("hashes.txt", "w+")
   
