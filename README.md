@@ -14,8 +14,9 @@ You will need:
   * Metadefender https://www.metadefender.com/public-api/#!/about
   * TotalHash https://totalhash.cymru.com/contact-us/
   * Hybrid Analysis https://www.hybrid-analysis.com/apikeys/info
-3. 
-2. Run the script by pointing it to a directory and specifing a 2 number code to choose malware samples from
+2. Add your keys to the script
+3. Tweak the amount of files you want to do analysis on (variable in the script)
+4. Run the script by pointing it to a directory and specifing a 2 number code to choose malware samples from
 `python3 lazylab.py /path/to/malwares 42`
 
 # To Do
@@ -28,6 +29,6 @@ Some ideas for improvement:
 
 # Contributing
 Feel like helping? a beer is cool but pull requests are way cooler, fork the repo, fix or add a thing and become a contributor!
-Testing and reporting bugs is also greatly appreciated
+Testing and reporting bugs is also greatly appreciated.
 
 Made with <3 for my cybersec classmates
