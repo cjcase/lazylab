@@ -18,6 +18,7 @@ You will need:
 2. Add your keys to the script
 3. Tweak the amount of files you want to do analysis on (variable in the script)
 4. Run the script by pointing it to a directory and specifing a 2 number code to choose malware samples from
+
 `python3 lazylab.py /path/to/malwares 42`
 
 # To Do
