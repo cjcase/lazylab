@@ -241,10 +241,18 @@ def pe_is(missing="n"):
       if "executable" in rest:
         out_exec = open(os.path.join(path_dir, "{}.txt".format(p[29:])), "w+")
         args = shlex.split("pescan -v {}".format(p))
-        cmd_out = sp.check_output(args).decode()
+        try:
+          cmd_out = sp.check_output(args).decode()
+        except Exception as e:
+          print("[*] pescan error: {}".format(str(e)))
+          print("Continuing...")
         out_exec.write(cmd_out)
         args = shlex.split("readpe {}".format(p))
-        cmd_out = sp.check_output(args).decode()
+        try:
+          cmd_out = sp.check_output(args).decode()
+        except Exception as e:
+          print("[*] readpe error: {}".format(str(e)))
+          print("Continuing...")
         out_exec.write(cmd_out)
   print("Done!")
 
